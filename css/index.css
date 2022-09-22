@@ -24,6 +24,12 @@ nav {
     font-family: Playfair Display;
 }
 
+li {
+    width: 15%;
+    border-radius: 5px;
+}
+
+
 div > ul {
     margin-top: 3%;
 }
@@ -40,17 +46,26 @@ div ul {
 li a {
     text-decoration: none;
     color: black;
+    transition: color 0.2s;
 }
+li a:hover {
+    color: black;
+}
+
 ul li {
     cursor: pointer;
     border-bottom: 1px solid rgb(255, 105, 180, 0);
     transition: border 0.2s;
     transition: background-color 0.2s linear;
+    transition: color 0.2s;
+
 }
 
 ul li:hover {
     border-bottom: 1px solid rgba(255, 105, 180, 1);
-    background-color: rgb(255, 255, 255);
+    background-color: pink;
+
+    color: black;
 }
 
 .portfolio-box {
@@ -142,6 +157,20 @@ ul li:hover {
     font-family: Playfair Display;
 }
 
+#content-box {
+    width: 100%;
+    background-color: white;
+    padding: 4%;
+    margin-bottom: 7%; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Playfair Display;
+    text-align: center;
+}
+
 .alive {
     color: green;
     cursor:grab;
@@ -152,11 +181,39 @@ ul li:hover {
     color:greenyellow;
 }
 
+.black-links {
+    text-decoration: none;
+    color: black;
+    transition: color 0.2s;
+}
+
+.black-links:hover{
+    color: aqua;
+}
+
 footer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     font-family: Damion;
+    /* padding: 1%; */
 
+}
+
+address a {
+    text-decoration: none;
+    color: black;
+    transition: border 0.2s;
+    transition: background-color 1s;
+    transition: color 0.2s;
+}
+
+address a:hover {
+    border-bottom: 1px solid rgba(255, 105, 180, 1);
+    background-color: pink;
+    border-radius: 5px;
+    color: black;
 }
 
 /*--------------------------------------------DESKTOP--------------------------------------------*/
@@ -177,6 +234,11 @@ footer {
         display: none;
     }
 
+    li {
+        width: 40%;
+        border-radius: 5px;
+    }
+
     div ul {
         display: flex;
         flex-direction: row;
@@ -185,5 +247,9 @@ footer {
     .FED-desktop {
         display: contents;
         font-family: Playfair Display;
+    }
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
     }
 }

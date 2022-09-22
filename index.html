@@ -23,6 +23,7 @@
       href="https://fonts.googleapis.com/css2?family=Damion&family=Playfair+Display" />
   </head>
   <body>
+    <!-- Vi använder oss av följande Bootstrap container -->
     <div class="container">
       <!-- Content here -->
       <header>
@@ -34,12 +35,13 @@
               <li>
                 <a
                   href="https://www.linkedin.com/in/angelica-reutersw%C3%A4rd-a4923a1/"
-                  target="new"
-                  >Linked in</a
+                  target="_blank"
+                  id="linked-in"
+                  >Linkedin</a
                 >
               </li>
               <li>
-                <a href="https://github.com/Ayngie" target="new">Github</a>
+                <a href="https://github.com/Ayngie" target="_blank">Github</a>
               </li>
               <li>Contact</li>
             </ul>
@@ -57,7 +59,8 @@
           </div>
         </section>
 
-        <section class="content-box">
+        <!-- På följande sections applicerar vi en shadow m.h.a. Bootstrap  -->
+        <section class="shadow-sm p-3 mb-5 bg-body rounded" id="content-box">
           <p>Hi! I'm Angie! Welcome to my portfolio.</p>
           <p>
             I love building things and seeing them come
@@ -65,17 +68,57 @@
           </p>
         </section>
 
-        <section class="content-box">
+        <section class="shadow-sm p-3 mb-5 bg-body rounded" id="content-box">
           <h4>Relevant education</h4>
-          <p>Relevant education</p>
+          <p>
+            Front-end developer på
+            <a
+              href="https://medieinstitutet.se/utbildningar/front-end-developer/"
+              target="new"
+              class="black-links"
+              >Medieinstitutet
+            </a>
+            Stockholm (2022-2024)
+          </p>
+          <p>
+            Programmering 1 på
+            <a
+              href="https://www.jensenkomvux.se/"
+              target="new"
+              class="black-links"
+              >Jensen Komvux</a
+            >
+          </p>
+          <p>
+            Webbutveckling 1 på
+            <a
+              href="https://www.jensenkomvux.se/"
+              target="new"
+              class="black-links"
+              >Jensen Komvux</a
+            >
+          </p>
         </section>
 
-        <section class="content-box">
+        <section class="shadow-sm p-3 mb-5 bg-body rounded" id="content-box">
           <h4>Work experience</h4>
-          <p>Work experience</p>
+          <p>
+            Egenföretagare i över 10 år med privat osteopatklinik, där jag
+            jobbat med "buggar" i andra system :)
+          </p>
         </section>
       </main>
-      <footer>Angelica Reuterswärd</footer>
+
+      <footer>
+        <p>Angelica Reuterswärd, Front-end developer</p>
+        <address>
+          <a href="mailto:angelica.reutersward@medieinstitutet.se">E-mail me</a>
+        </address>
+        <address>
+          Call me:
+          <a href="tel:+4670-6697590">+4670-669 75 90</a>
+        </address>
+      </footer>
     </div>
   </body>
 </html>
