@@ -182,6 +182,11 @@ h4 {
     color: aqua;
 }
 
+.busybee-box {
+    width: 50%;
+    height: 50%;
+}
+
 footer {
     display: flex;
     flex-direction: column;
